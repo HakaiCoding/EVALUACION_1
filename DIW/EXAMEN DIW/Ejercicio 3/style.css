@@ -1,0 +1,73 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Mixin */
+/* Variables */
+/* Style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+body #mainheader #navbar {
+  background-color: rgb(64, 64, 247);
+  height: 80px;
+}
+body #mainheader #navbar .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+body #mainheader #navbar .container .logo {
+  color: #ffffff;
+  margin-top: 20px;
+}
+body #mainheader #navbar .container ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+body #mainheader #navbar .container ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+}
+body #mainheader #showcase {
+  height: 91vh;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("background.jpg");
+}
+body #mainheader #showcase .container {
+  position: relative;
+  height: 80%;
+  width: 50%;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+body #mainheader #showcase .container .display-1 {
+  width: 500px;
+  color: #000000;
+  font-size: 90px;
+  margin-right: 50px;
+}
+body #mainheader #showcase .container p {
+  width: 550px;
+  padding: 20px;
+}
+body #mainheader #showcase .container a {
+  background-color: rgb(49, 49, 49);
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  width: 120px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 80px;
+  left: 200px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,243 @@
+/* Variables */
+$azulOscuro : #0e4e90;
+$azulClaro : #3eb4dc;
+$azulClaroBoton : #3eb5e1;
+$grisClaro : #5f85ad;
+$blanco : #ffffff;
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Mixin */
+@mixin letraMayus{
+    text-transform: uppercase;
+}
+
+@mixin letra40px {
+    font-size: 40px;   
+}
+
+@mixin aNoStyle{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Estilo */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $azulOscuro;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    #inicio {
+        #navbar {
+            .contenedor {
+                display: flex;
+                justify-content: space-around;
+                
+                .logo {
+                    color: $blanco;
+                    @include letraMayus();
+                }
+                ul {
+                    display: flex;
+                    @include aNoStyle();
+                    
+                    li {
+                        padding: 0px 15px;
+                        a {
+                            color: $blanco;
+                            @include letraMayus();
+                            @include aNoStyle();
+                            
+                        }
+                    }
+                }
+            }
+        }
+        #portada {
+            height: 100vh;
+            .contenedor {
+                .portada-fila {
+                    margin-top: 100px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    &-txt {
+                        height: 350px;
+                        width: 35%;
+                        margin-left: 12.5%;
+                        .large {
+                            @include letraMayus();
+                            color: $blanco;
+                            padding: 10px;
+                            margin-left: 20px;
+                        }
+                        & h1 {   
+                            @include letraMayus();
+                            @extend .large;
+                            // color: $blanco;
+                            // padding: 10px;
+                            // margin-left: 20px;
+                            
+
+                            .txt-secundario {
+                                color: $azulClaro;
+                            }
+                        }
+                        .large2 {
+                            text-transform: lowercase;
+                            color: $blanco;
+                            padding: 30px;
+                            margin-bottom: 20px;
+                        }
+                        a {
+                            border-radius: 30px;
+                            background-color: $azulClaroBoton;
+                            color: $blanco;
+                            padding: 5px 10px;
+                            margin-left: 30px;
+                            @include letraMayus();
+                            @include aNoStyle();;
+                        }
+                    }
+                    &-img {
+                        width: 50%;
+                        margin-right: 10%;
+                        & img {
+                            display: block;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #servicios {
+        height: 100vh;
+        .contenedor {
+            height: 80%;
+            h2 {
+                text-align: center;
+                color: $azulClaro;
+                @include letra40px();
+                @include letraMayus();
+            }
+
+            .large {
+                text-align: center;
+                color: $blanco;
+                line-height: 30px;
+                width: 50%;
+                margin: 10px auto;
+                font-size: 20px;
+            }
+
+            .servicios-fila {
+                margin-top: 2%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                &-caja{
+
+                    img {
+                        width: 250px;
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    h4 {
+                        color: $azulClaro;
+                        padding: 20px;
+                        font-size: 25px;
+                    }
+
+                    p {
+                        color: $blanco;
+                        padding: 10px;
+                        font-size: 20px;
+                    }
+                }
+
+            }
+
+        }
+    }
+    #contact {
+       
+        .contenedor {
+
+            h2 {   
+                color: $azulClaro;
+                @include letraMayus();
+                @include letra40px();
+                text-align: center;
+                padding: 10px;
+            }
+
+            p {
+                color: $blanco;
+                text-align: center;
+                font-size: 23px;
+                width: 60%;
+                margin: 0 auto;
+                padding: 10px;
+            }
+
+            form {
+                display: grid;
+                place-items: center;
+                padding-top: 50px;
+                .form-group {
+                    display: grid;
+                    
+                    label {
+                        color: $blanco;
+                        padding: 10px;
+                    }
+                    input {
+                        border-radius: 20px;
+                        border: none;
+                        width: 550px;
+                        height: 35px;
+                    }
+                    textarea {
+                        @extend input;
+                        height: 50px;
+                        // border-radius: 20px;
+                        // border: none;
+                        // width: 550px;
+                    }
+                }
+
+                button {
+                    border-radius: 20px;
+                    border: none;
+                    margin-top: 15px;
+                    width: 550px;
+                    height: 35px;
+                    background-color: $azulClaroBoton;
+                    color: $blanco;
+                    @include letraMayus();
+                }
+            }
+        }
+    }
+    #pie {
+
+        .contenedor {
+            display: grid;
+            place-items: center;
+            padding: 200px;
+            box-sizing: border-box;
+            a {
+                
+            }
+        }
+    }
+}

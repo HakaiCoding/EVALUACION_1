@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    border: 3px black solid;
+    background-color: skyblue;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+
+nav {
+    border: 3px black solid;
+    background-color: aquamarine;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+
+
+section {
+    border: 3px black solid;
+    background-color: blue;
+    display: block;
+    height: 600px;
+    width: 65%;
+    float: left;
+    box-sizing: border-box;
+}
+
+article {
+    border: 2px black solid;
+    background-color: aqua;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 80%;
+    height: 45%;
+    
+}
+
+aside {
+    border: 3px black solid;
+    border-right: 4px black solid;
+    background-color: lightseagreen;
+    text-align: center;
+    float: right;
+    width: 35%;
+    height: 600px;
+    box-sizing: border-box;
+
+}
+
+footer {
+    border: 3px black solid;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 37.5rem;
+    width: 100%;
+    height: 110px;
+    
+}

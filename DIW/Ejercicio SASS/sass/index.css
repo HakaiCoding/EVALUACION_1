@@ -1,0 +1,181 @@
+/* Variables */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* Mixin */
+/* Estilo */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0e4e90;
+  font-family: "Montserrat", sans-serif;
+  width: 80%;
+  margin: 0 auto;
+}
+body #inicio #navbar .contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+body #inicio #navbar .contenedor .logo {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+body #inicio #navbar .contenedor ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+body #inicio #navbar .contenedor ul li {
+  padding: 0px 15px;
+}
+body #inicio #navbar .contenedor ul li a {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+}
+body #inicio #portada {
+  height: 100vh;
+}
+body #inicio #portada .contenedor .portada-fila {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body #inicio #portada .contenedor .portada-fila-txt {
+  height: 350px;
+  width: 35%;
+  margin-left: 12.5%;
+}
+body #inicio #portada .contenedor .portada-fila-txt .large, body #inicio #portada .contenedor .portada-fila-txt h1 {
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 10px;
+  margin-left: 20px;
+}
+body #inicio #portada .contenedor .portada-fila-txt h1 {
+  text-transform: uppercase;
+}
+body #inicio #portada .contenedor .portada-fila-txt h1 .txt-secundario {
+  color: #3eb4dc;
+}
+body #inicio #portada .contenedor .portada-fila-txt .large2 {
+  text-transform: lowercase;
+  color: #ffffff;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+body #inicio #portada .contenedor .portada-fila-txt a {
+  border-radius: 30px;
+  background-color: #3eb5e1;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin-left: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+}
+body #inicio #portada .contenedor .portada-fila-img {
+  width: 50%;
+  margin-right: 10%;
+}
+body #inicio #portada .contenedor .portada-fila-img img {
+  display: block;
+  margin: 0 auto;
+}
+body #servicios {
+  height: 100vh;
+}
+body #servicios .contenedor {
+  height: 80%;
+}
+body #servicios .contenedor h2 {
+  text-align: center;
+  color: #3eb4dc;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+body #servicios .contenedor .large, body #servicios #inicio #portada .contenedor .portada-fila-txt h1, body #inicio #portada #servicios .contenedor .portada-fila-txt h1 {
+  text-align: center;
+  color: #ffffff;
+  line-height: 30px;
+  width: 50%;
+  margin: 10px auto;
+  font-size: 20px;
+}
+body #servicios .contenedor .servicios-fila {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body #servicios .contenedor .servicios-fila-caja img {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+body #servicios .contenedor .servicios-fila-caja h4 {
+  color: #3eb4dc;
+  padding: 20px;
+  font-size: 25px;
+}
+body #servicios .contenedor .servicios-fila-caja p {
+  color: #ffffff;
+  padding: 10px;
+  font-size: 20px;
+}
+body #contact .contenedor h2 {
+  color: #3eb4dc;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+}
+body #contact .contenedor p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 23px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+}
+body #contact .contenedor form {
+  display: grid;
+  place-items: center;
+  padding-top: 50px;
+}
+body #contact .contenedor form .form-group {
+  display: grid;
+}
+body #contact .contenedor form .form-group label {
+  color: #ffffff;
+  padding: 10px;
+}
+body #contact .contenedor form .form-group input, body #contact .contenedor form .form-group textarea {
+  border-radius: 20px;
+  border: none;
+  width: 550px;
+  height: 35px;
+}
+body #contact .contenedor form .form-group textarea {
+  height: 50px;
+}
+body #contact .contenedor form button {
+  border-radius: 20px;
+  border: none;
+  margin-top: 15px;
+  width: 550px;
+  height: 35px;
+  background-color: #3eb5e1;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+body #pie .contenedor {
+  display: grid;
+  place-items: center;
+  padding: 200px;
+  box-sizing: border-box;
+}/*# sourceMappingURL=index.css.map */

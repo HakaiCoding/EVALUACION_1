@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="logic.php" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="name">Alumno</label>
+            <input type="text" name="name">
+        </div><br>
+        <div>
+            <label for="subject">Asignatura</label>
+            <input type="text" name="subject">
+        </div><br>
+        <div>
+            <label for="course">Curso</label>
+            <input type="text" name="course">
+        </div><br>
+        <div>
+            <label for="score1">Nota actitud </label>
+            <input min= "0" max= "10" type="number" name="aptScore">
+            <label for="score1">Nota trabajos</label>
+            <input min= "0" max= "10"type="number" name="workScore">
+            <label for="score1">Nota exámen</label>
+            <input min= "0" max= "10"type="number" name="testScore">
+        </div><br>
+        <div>
+            <span>FILE:</span>
+            <input type="file" name="uploadFile" />
+        </div><br>
+        <input type="submit" name="uploadBtn" value="Enviar" />
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,551 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER */
+/**********/
+.main-header {
+    box-shadow: inset 0px 0px 3px 3px black;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0d9cf;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 0 30px;
+    z-index: 3;   
+}
+
+.logo {
+    margin-left: 250px;
+    width: 80px;
+    height: auto; 
+}
+
+.logo img {
+    border: 1.5px black solid;
+    border-radius: 50%; 
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.logo img:hover {
+    border: 2px black solid;
+    transition: 0.1s;
+}
+
+/* NAVBAR */
+/**********/
+.main-nav {
+    margin-right: 250px;   
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav li {
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 2px;
+}
+
+.main-nav li a {
+    font-family: 'Aref Ruqaa Ink', serif;
+}
+
+/* NAVBAR ITEM BORDER */
+.main-nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: black;
+    transform: scaleX(0);
+    transition: transform 0.6s cubic-bezier(0.19,1,0.22,1);
+}
+
+.main-nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* MAIN-SECTION */
+/****************/
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 0px 0px 50px 50px black;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("img/sections/main3.jpg") 
+}
+
+.section-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    height: 500px;
+    width: 500px;
+}
+
+.main-section div h1 {
+    font-family: 'Alkalami', serif;
+    font-size: 70px;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    color: #ece6d8;
+    text-shadow: 8px 8px 4px black;
+    width: 100%;
+    height: 0 auto;
+    cursor: default;
+}
+
+/* MIMO-SECTION */
+/****************/
+#mimo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 0px 0px 50px 50px black;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("img/sections/mimoSectionBG2.jpg") 
+}
+
+/* CONTAINER1 (TITULO Y TEXTO) */
+.mimo-section-wrapper {
+    background-color: #e0d9cf;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mimo-section-container1 {
+    display: inline-block;
+    margin-right: 10px;
+    width: 650px;
+    height: 470px;
+}
+
+.mimo-section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+}
+
+.mimo-section-title h2 {
+    border-bottom: 2px black solid;
+    color: black;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-size: 45px;
+    cursor: default;
+}
+
+.mimo-section-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.mimo-section-text p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+    width: 90%;
+    cursor: default;
+}
+
+/* CONTAINER 2 (IMAGENES) */
+.mimo-section-container2 {
+    margin-left: 10px;
+    width: 450px;
+    height: 500px;
+}
+
+.mimo-section-image {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.mimo-section-image img {
+    border-radius: 10px;
+    border-left: 2px black solid;
+    width: 100%;
+    height: 100%;
+}
+
+/* CARTA-SECTION */
+/*****************/
+#carta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 0px 0px 50px 50px black;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("img/sections/cartaSectionBG.jpg");
+}
+
+.carta-section-wrapper {
+    display: inline-block;
+    width: 1500px;
+    height: 750px;
+}
+
+/* CONTAINER1 (BUTTONS) */
+.carta-section-container1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 1000px;
+    height: 150px;
+}
+
+.carta-section-container1 button {
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: #e0d9cf;
+    border: unset;
+}
+
+.carta-section-container1 button:hover {
+    color: #e0d9cf;
+    background-color: black;
+    transition: 0.6s;
+}
+
+/* CONTAINER2 (GRID IMAGENES) */
+.carta-section-container2 {
+    display: grid;
+    grid-template-columns:repeat(5, 2fr);
+    margin-top: 30px;
+    border: 2px black solid;
+}
+
+.carta-section-container2 img {
+    border: 1px black solid;
+    width: 100%;    
+    height: 270px;
+}
+
+/* REVIEWS SECTION */
+/*******************/
+#reviews-section {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 0px 0px 50px 50px black;
+    display: grid;
+    place-items: center;
+}
+
+.reviews-section-wrapper {
+    width: 80%;
+}
+
+.reviews-section-header {
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.reviews-section-header h3 { 
+    width: 55%;
+    margin: 0 auto;
+    color: #ece6d8;
+    border-bottom: 1px white solid;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    cursor: default;
+}
+
+.reviews-section-header p {  
+    color: lightgray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    cursor: default;
+}
+
+.reviews-widget {
+    margin-top: 20px;
+}
+
+/* COMO LLEGAR SECTION */
+#goto-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 0px 0px 50px 50px black;
+    background-color: black;
+}
+
+.goto-section-wrapper {
+    display: block;
+    width: 1200px;
+    height: 650px;
+}
+
+.goto-section-title {
+    height: 10%;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.goto-section-title h2 { 
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-size: 35px;
+    border-bottom: 2px #ece6d8 solid;
+    font-weight: bolder;
+    text-align: center;
+    color: #ece6d8;
+    cursor: default;
+}
+
+.goto-section-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20%;
+}
+
+.icon-location {
+    display: flex;
+}
+
+.icon-location p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+.icon-phone {
+    display: flex;
+}
+
+.icon-phone p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+/* RESERVAR-SECTION */
+/********************/
+#reservar-section {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.reservar-section-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* ASIDE-LEFT */
+.aside-left {
+    width: 18%;
+    height: 60%;
+    display: grid;
+    place-items: center;  
+}
+
+.quote {
+    height: 50%;
+    display: grid;
+    place-items: center;
+
+}
+
+.quote p {
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    cursor: default;
+}
+
+/* CONTAINER-CENTER */
+.container-center {
+    width: 50%;
+    height: 75%;
+    display: grid;
+    place-items: center;
+}
+
+.container-center h2 {
+    border-bottom: 2px #e0cfd9 solid;
+    color: #ece6d8;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-size: 35px;
+    text-align: center;
+    width: 40%;
+    cursor: default;
+}
+
+/* FORM */
+.form-wrapper {
+    background-color: #e0d9cf;
+    border-radius: 10px;
+    width: 60%;
+    height: 95%;
+    text-align: center;
+    padding: 10px;
+    box-shadow: inset 0px 0px 25px 5px white;
+    box-sizing: border-box;
+}
+
+.form-wrapper form {
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.fecha-hora-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form label {
+    border: 2px #e0cfd9;
+}
+
+form input, select {
+    border-radius: 15px;
+    height: 25px;
+    display: block;
+    margin: 18px auto;
+    text-align: center;
+}
+
+form button {
+    cursor: pointer;
+    height: 35px;
+    width: 130px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px;
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #e0d9cf;
+    border: unset;
+}
+
+form button:hover {
+    color: #e0d9cf;
+    background-color: black;
+    transition: 0.6s;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terms input{
+    margin: 0px !important;
+}
+
+/* ASIDE-RIGHT */
+.aside-right {
+    width: 18%;
+    height: 60%;
+    display: grid;
+    place-items: center;
+}
+
+.rrss {
+    height: 50%;
+    display: grid;
+    place-items: center;
+}
+
+/* FOOTER */
+/**********/
+footer {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    text-align: center;
+}
+
+footer h3 {
+    cursor: default;
+}
